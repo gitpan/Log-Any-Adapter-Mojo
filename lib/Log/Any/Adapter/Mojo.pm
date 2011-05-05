@@ -1,7 +1,7 @@
 package Log::Any::Adapter::Mojo;
 
 BEGIN {
-    $Log::Any::Adapter::Mojo::VERSION = '0.01';
+    $Log::Any::Adapter::Mojo::VERSION = '0.03';
 }
 
 use strict;
@@ -143,13 +143,13 @@ Henry Tang
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright (C) 2011 Henry Tang, all rights reserved.
+Copyright (C) 2011 Henry Tang
 
 Log::Any::Adapter::Mojo is provided "as is" and without any express or
 implied warranties, including, without limitation, the implied warranties
 of merchantibility and fitness for a particular purpose.
 
-This program is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself.
+This program is free software, you can redistribute it and/or modify it
+under the terms of the Artistic License version 2.0.
 
 =cut

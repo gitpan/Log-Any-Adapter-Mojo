@@ -1,10 +1,10 @@
 --- #YAML:1.0
 name:               Log-Any-Adapter-Mojo
-version:            0.01
+version:            0.03
 abstract:           ~
 author:
     - Henry Tang <henryykt@gmail.com>
-license:            unknown
+license:            artistic_2
 distribution_type:  module
 configure_requires:
     ExtUtils::MakeMaker:  0
