@@ -1,23 +1,23 @@
---- #YAML:1.0
-name:               Log-Any-Adapter-Mojo
-version:            0.03
-abstract:           ~
+---
+abstract: unknown
 author:
-    - Henry Tang <henryykt@gmail.com>
-license:            artistic_2
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
+  - 'Henry Tang <henryykt@gmail.com>'
 build_requires:
-    ExtUtils::MakeMaker:  0
-requires:
-    Log::Any::Adapter:  0.03
-    Mojolicious:        1.13
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.56
+  ExtUtils::MakeMaker: 0
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.59, CPAN::Meta::Converter version 2.112150'
+license: artistic_2
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Log-Any-Adapter-Mojo
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Log::Any::Adapter: 0.03
+  Mojolicious: 1.13
+version: 0.04
