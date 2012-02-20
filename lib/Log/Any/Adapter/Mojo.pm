@@ -1,7 +1,7 @@
 package Log::Any::Adapter::Mojo;
 
 BEGIN {
-    $Log::Any::Adapter::Mojo::VERSION = '0.04';
+    $Log::Any::Adapter::Mojo::VERSION = '0.05';
 }
 
 use strict;
@@ -46,6 +46,8 @@ foreach my $method ( Log::Any->logging_methods ) {
                 my $l    = shift;
 
                 $l =~ s/Log::Any::Adapter::Mojo:\d+/\Q$pkg\E:\Q$line\E/;
+                $l =~ s/Mojo::EventEmitter:\d+/\Q$pkg\E:\Q$line\E/;
+                $l =~ s/Mojo::Log:\d+/\Q$pkg\E:\Q$line\E/;
 
                 return $self->$old_syswrite( $l, @_ );
             };
